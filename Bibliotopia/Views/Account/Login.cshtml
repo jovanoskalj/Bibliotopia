@@ -1,0 +1,71 @@
+﻿@using Bibliotopia.Data.ViewModels;
+@model LoginVM;
+
+@{
+    ViewData["Title"] = "Најава";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3 class="my-2">Најава</h3>
+                </div>
+                <div class="card-body">
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger text-center">
+                            <span><strong>Грешка!</strong> - @TempData["Error"]</span>
+                        </div>
+                    }
+
+                    <form asp-action="Login" class="needs-validation" novalidate>
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-group">
+                            <label asp-for="EmailAddress" class="control-label"></label>
+                            <input asp-for="EmailAddress" class="form-control" required />
+                            <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                            <div class="invalid-feedback">Ве молиме внесете валидна email адреса.</div>
+                        </div>
+                        <div class="form-group" >
+                            <label asp-for="Password" class="control-label"></label>
+                            <input asp-for="Password" type="password" class="form-control" required />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                            <div class="invalid-feedback">Ве молиме внесете валидна лозинка.</div>
+                        </div>
+
+                        <div class="form-group d-flex justify-content-between align-items-center" style="margin-top:40px">
+                            <a class="btn btn-outline-secondary" asp-controller="Books" asp-action="Index">Откажи</a>
+                            <input class="btn btn-success" type="submit" value="Најави се" />
+                        </div>
+                    </form>
+                </div>
+                @* <div class="card-footer text-center" " >
+                    <a asp-controller="Account" asp-action="Register" class="small">Регистрирај се</a>
+                </div> *@
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+}

@@ -1,0 +1,174 @@
+﻿@model IEnumerable<Bibliotopia.Models.BookPublisher>
+
+@{
+    ViewData["Title"] = "Издавачки куќи";
+}
+
+@section SearchForm {
+    <form class="form-inline ml-auto">
+        <div class="input-group">
+            <input class="form-control" type="search" placeholder="Пребарувај..." aria-label="Search" id="searchQuery">
+            <button class="btn btn-outline-secondary" type="button" id="clearSearch"><i class="bi bi-x"></i></button>
+        </div>
+    </form>
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2>@ViewData["Title"]</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Назив:</th>
+                    <th>@Html.DisplayNameFor(model => model.Description)</th>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                      <th>Опции</th>  
+                    }
+                    
+                </tr>
+            </thead>
+            <tbody id="publisherTable">
+                @foreach (var publisher in Model)
+                {
+                    <tr>
+                        <td class="align-middle">
+                            <img class="rounded-circle image-with-frame" src="@publisher.LogoUrl" alt="@publisher.Name" />
+                        </td>
+                        <td class="align-middle">@publisher.Name</td>
+                        <td class="align-middle">@publisher.Description</td>
+                        <td class="align-middle">
+                            <div class="btn-group">
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                                {
+                                    <a class="btn btn-outline-primary" asp-controller="Publishers" asp-action="Edit" asp-route-id="@publisher.Id">
+                                        <i class="bi bi-pencil-square"></i> Измени
+                                    </a>
+                                }
+                                <a class="btn btn-outline-info" asp-controller="Publishers" asp-action="Details" asp-route-id="@publisher.Id">
+                                    <i class="bi bi-eye"></i> Детали
+                                </a>
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin")) { 
+                                <button class="btn btn-outline-danger delete-button" data-publisher-id="@publisher.Id">
+                                    <i class="bi bi-trash"></i> Избриши
+                                </button>
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@await Html.PartialAsync("_CreateItem","Publishers")
+<style>
+    .table-filter {
+        margin-bottom: 15px;
+        width: 300px;
+    }
+
+    .btn-group {
+        display: flex; /* Make buttons display in a row */
+        gap: 5px; /* Space between buttons */
+    }
+
+    .btn {
+        border-radius: 25px; /* Rounded buttons */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        display: inline-flex; /* Display buttons in a row */
+        align-items: center; /* Center content vertically */
+        padding: 8px 12px; /* Padding around button text */
+    }
+
+        .btn i {
+            margin-right: 5px; /* Margin between icon and text */
+        }
+
+    .btn-outline-primary:hover, .btn-outline-info:hover, .btn-danger:hover {
+        color: white !important; /* Ensures text color remains white on hover */
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #007bff; /* Primary button hover color */
+    }
+
+    .btn-outline-info:hover {
+        background-color: #17a2b8; /* Info button hover color */
+    }
+
+    .btn-danger:hover {
+        background-color: #dc3545; /* Danger button hover color */
+    }
+
+    .image-with-frame {
+        border: 2px solid #000; /* Thin black border */
+        border-radius: 50%; /* Circular border radius */
+        width: 150px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        object-fit: contain; /* Fit the entire image within the container */
+        object-position: center; /* Center the image within the container */
+    }
+</style>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Search functionality
+            $('#searchQuery').on('input', function () {
+                var filter = $(this).val().toLowerCase();
+                $('#publisherTable tr').each(function () {
+                    var name = $(this).find('td:nth-child(2)').text().toLowerCase();
+                    var description = $(this).find('td:nth-child(3)').text().toLowerCase();
+                    if (name.includes(filter) || description.includes(filter)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+
+            $('#clearSearch').on('click', function () {
+                $('#searchQuery').val('');
+                $('#publisherTable tr').show();
+            });
+
+            // Bootbox delete confirmation
+            $('.delete-button').on('click', function () {
+                var publisherId = $(this).data('publisher-id');
+                bootbox.confirm({
+                    title: "Бришење",
+                    message: "Дали сте сигурни дека сакате да избришете?",
+                    buttons: {
+                        cancel: {
+                            label: '<i class="fa fa-times"></i> Откажи'
+                        },
+                        confirm: {
+                            label: '<i class="fa fa-check"></i> Потврди'
+                        }
+                    },
+                    callback: function (result) {
+                        if (result) {
+                            $.ajax({
+                                url: '@Url.Action("Delete", "Publishers")',
+                                type: 'POST',
+                                data: { id: publisherId },
+                                success: function () {
+                                    location.reload();
+                                },
+                                error: function () {
+                                    bootbox.alert("An error occurred while trying to delete the publisher.");
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+}
+
+}

@@ -1,0 +1,124 @@
+﻿@using Bibliotopia.Data.ViewModels;
+@model ShoppingCartVM
+
+@{
+    ViewData["Title"] = "Резиме на кошничка";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center">Кошничка</h2>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Избрана количина</th>
+                                    <th scope="col">Книга</th>
+                                    <th scope="col">Цена</th>
+                                    <th scope="col">Подзбир</th>
+                                    <th scope="col">Акции</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.ShoppingCart.Items)
+                                {
+                                    <tr>
+                                        <td>@item.Amount</td>
+                                        <td>@item.Book.Title</td>
+                                        <td>@item.Book.Price.ToString("C", new System.Globalization.CultureInfo("mk-MK"))</td>
+                                        <td class="align-middle">@((item.Amount * item.Book.Price).ToString("C", new System.Globalization.CultureInfo("mk-MK")))</td>
+                                        <td>
+                                            <div class="btn-group" role="group">
+                                                <a class="btn btn-sm btn-outline-danger" asp-controller="Orders" asp-action="RemoveItemFromShoppingCart" asp-route-id="@item.Book.Id">
+                                                    <i class="bi bi-cart-dash"></i> Отстрани
+                                                </a>
+                                                <a class="btn btn-sm btn-outline-success" asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Book.Id">
+                                                    <i class="bi bi-cart-plus"></i> Додај повеќе
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td><strong>Вкупно:</strong></td>
+                                    <td>@Model.ShoppingCartTotal.ToString("C", new System.Globalization.CultureInfo("mk-MK"))</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <div class="btn-group">
+                       @*  <a class="btn btn-primary" asp-action="CompleteOrder">
+                            Кон наплата
+                        </a> *@
+                        <div id="paypal-btn"></div>
+                        <span style="padding:5px"></span>
+                        <a class="btn btn-success" asp-controller="Books" asp-action="Index">
+                            Продолжи со купување
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <!-- Include PayPal checkout script -->
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+    <script>
+        // Define the exchange rate (you should replace this with a dynamically fetched rate)
+        let exchangeRate = 0.018; // Example rate: 1 MKD = 0.018 USD
+
+        // Calculate the total in USD
+        let mkdTotal = @Html.Raw(Model.ShoppingCartTotal);
+        let usdTotal = mkdTotal * exchangeRate;
+
+        paypal.Button.render({
+            // Configure PayPal environment
+            env: 'sandbox', // Change to 'production' for live transactions
+            client: {
+                sandbox: 'AUWClwOUnD8Gn_xhm8dKmVYFhOBqH26RUqZDIoC0s679kDp-zFkWTAwM1bkdC8R3f2778-gy6vF1xtrM' // Replace with your sandbox client ID
+            },
+            locale: 'en_US',
+            style: {
+                size: 'small',
+                color: 'gold',
+                shape: 'pill'
+            },
+            commit: true,
+
+            // Set up the payment
+            payment: function (data, actions) {
+                return actions.payment.create({
+                    transactions: [{
+                        amount: {
+                            total: usdTotal.toFixed(2), // Ensure total is in USD with 2 decimal places
+                            currency: 'USD'
+                        }
+                    }]
+                });
+            },
+
+            // On payment authorization, redirect to complete order
+            onAuthorize: function (data, actions) {
+                return actions.payment.execute().then(function () {
+                    var url = '@Url.Action("CompleteOrder", "Orders")'; // Adjust as per your route
+                    window.location.href = url;
+                });
+            }
+
+        }, '#paypal-btn');
+    </script>
+}
+
+}

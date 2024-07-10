@@ -1,0 +1,89 @@
+﻿@using Bibliotopia.Data.Enums
+@model NewBookVM
+@{
+    ViewData["Title"] = "Додади нова книга";
+}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card shadow-sm mt-4">
+            <div class="card-header bg-primary text-white text-center">
+                <h4>Додади нова книга</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="Title" class="form-label">Наслов на книга: </label>
+                                <input asp-for="Title" class="form-control" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="StartDate" class="form-label">На продажба од:</label>
+                                <input asp-for="StartDate" type="date" class="form-control" />
+                                <span asp-validation-for="StartDate" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="EndDate" class="form-label">На продажба до:</label>
+                                <input asp-for="EndDate" type="date" class="form-control" />
+                                <span asp-validation-for="EndDate" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Price" class="form-label">Цена на книга:</label>
+                                <input asp-for="Price" type="number" class="form-control" />
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label asp-for="PublisherId" class="form-label">Издавачка куќа:</label>
+                                <select asp-for="PublisherId" class="form-control" asp-items="ViewBag.Publishers"></select>
+                                <span asp-validation-for="PublisherId" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="BookCategory" class="form-label">Категорија:</label>
+                                <select asp-for="BookCategory" class="form-control" asp-items="Html.GetEnumSelectList<BookCategory>()"></select>
+                                <span asp-validation-for="BookCategory" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="AuthorsIds" class="form-label">Автор/и:</label>
+                                <select asp-for="AuthorsIds" class="form-control" asp-items="ViewBag.Authors" multiple></select>
+                                <span asp-validation-for="AuthorsIds" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label">Опис:</label>
+                        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <label asp-for="BookImageUrl" class="form-label">Слика од корица:</label>
+                            <input asp-for="BookImageUrl" id="ImageURL" class="form-control" />
+                            <span asp-validation-for="BookImageUrl" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img id="ImageUrlPreview" src="/images/placeholder.png" class="img-thumbnail mt-4" style="max-height: 200px;" />
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <input type="submit" value="Додади" class="btn btn-success me-md-2" />
+                        <a class="btn btn-secondary" asp-action="Index">Назад кон насловна</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("ImageURL").addEventListener("input", function () {
+            var output = document.getElementById("ImageUrlPreview");
+            output.src = this.value;
+        });
+    </script>
+}

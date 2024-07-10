@@ -1,0 +1,158 @@
+﻿@model IEnumerable<Bibliotopia.Models.Book>
+
+@{
+    ViewData["Title"] = "Книги";
+}
+
+@section SearchForm {
+    <form class="form-inline ml-auto">
+        <div class="input-group">
+            <input class="form-control" type="search" placeholder="Пребарувај..." aria-label="Search" id="searchQuery">
+            <button class="btn btn-outline-secondary" type="button" id="clearSearch"><i class="bi bi-x"></i></button>
+        </div>
+    </form>
+}
+
+<div class="container mt-4">
+    <div class="row" id="bookList">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-4 book-item">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header text-white d-flex justify-content-between align-items-center" style="background-color:cornflowerblue">
+                        <h5 class="card-title mb-0">@item.Title</h5>
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                            <div>
+                                <a class="text-white me-2" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
+                                <a class="text-white" href="#" onclick="confirmDelete('@item.Id')"><i class="bi bi-trash"></i></a>
+                            </div>
+                        }
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="@item.BookImageUrl" class="img-fluid rounded-start book-image" alt="@item.Title">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <p class="card-text"><b>Категорија: </b>@item.BookCategory</p>
+                                <p class="card-text">
+                                    <b>Автори: </b>
+                                    @if (item.AuthorsBooks != null && item.AuthorsBooks.Any())
+                                    {
+                                        @Html.Raw(string.Join(", ", item.AuthorsBooks.Select(ab => ab.Author.FullName)))
+                                    }
+                                    else
+                                    {
+                                        <span>Нема достапни автори</span>
+                                    }
+                                </p>
+                                <p class="card-text"><b>На продажба од: </b>@item.StartDate.ToString("dd MMM yy")</p>
+                                <p class="card-text"><b>На продажба до: </b>@item.EndDate.ToString("dd MMM yy")</p>
+                                <p class="card-text">
+                                    <b>Статус: </b>
+                                    @if (DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
+                                    {
+                                        <span class="badge bg-success">Во продажба</span>
+                                    }
+                                    else if (DateTime.Now > item.EndDate)
+                                    {
+                                        <span class="badge bg-danger">Завршено</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-primary">Наскоро</span>
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                        <a class="btn btn-outline-primary me-2" asp-action="Details" asp-route-id="@item.Id">
+                            <i class="bi bi-eye-fill"></i> Детали
+                        </a>
+                        @{
+                            var isDisabled = DateTime.Now < item.StartDate || DateTime.Now > item.EndDate;
+                        }
+                        @if (!User.IsInRole("Admin"))
+                        {
+                            <a class="btn btn-success text-white @(isDisabled ? "disabled" : "")"
+                               asp-controller="Orders"
+                               asp-action="AddItemToShoppingCart"
+                               asp-route-id="@item.Id">
+                                <i class="bi bi-cart-plus"></i> Додади во кошничка (Цена @item.Price.ToString("c", new System.Globalization.CultureInfo("mk-MK")))
+                            </a>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@await Html.PartialAsync("_CreateItem", "Books")
+
+<style>
+    .book-image {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .card-footer .btn-outline-primary {
+        margin-right: 10px;
+    }
+
+    .btn {
+        border-radius: 25px; /* Rounded buttons */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        display: inline-flex; /* Display buttons in a row */
+        align-items: center; /* Center content vertically */
+        padding: 8px 12px; /* Padding around button text */
+    }
+
+    .card-footer .btn-success {
+        margin-left: 10px;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#searchQuery').on('input', function () {
+                var filter = $(this).val().toLowerCase();
+                $('#bookList .book-item').each(function () {
+                    var title = $(this).find('.card-header .card-title').text().toLowerCase();
+                    var authors = $(this).find('.card-body .card-text:eq(1)').text().toLowerCase();
+                    var category = $(this).find('.card-body .card-text:eq(0)').text().toLowerCase();
+                    if (title.includes(filter) || authors.includes(filter) || category.includes(filter)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+
+            $('#clearSearch').on('click', function () {
+                $('#searchQuery').val('');
+                $('#bookList .book-item').show();
+            });
+        });
+
+        function confirmDelete(bookId) {
+            if (confirm("Дали сте сигурни дека сакате да ја избришете оваа книга?")) {
+                $.ajax({
+                    url: '@Url.Action("Delete", "Books")/' + bookId,
+                    type: 'POST',
+                    success: function (result) {
+                        location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        bootbox.alert("Грешка при бришење на книгата: " + error);
+                    }
+                });
+            }
+        }
+
+    </script>
+}

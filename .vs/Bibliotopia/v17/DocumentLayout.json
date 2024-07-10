@@ -1,0 +1,841 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.Items.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.Orders.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.ShoppingCartItems.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\services\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\services\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\base\\ibooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\base\\ibooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\base\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\base\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\orders\\shoppingcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\orders\\shoppingcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\shared\\_identity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\shared\\_identity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\cart\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\cart\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\viewmodels\\newbookvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\viewmodels\\newbookvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\account\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\account\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\migrations\\20240709114227_updateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\migrations\\20240709114227_updateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\author_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\author_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\bookpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\bookpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709113709_UpdateOrderEntit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bibliotopia\\Migrations\\20240709113709_UpdateOrderEntit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709112935_UpdateOrderEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bibliotopia\\Migrations\\20240709112935_UpdateOrderEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\appdbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\appdbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709112529_OrderItems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bibliotopia\\Migrations\\20240709112529_OrderItems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\orders\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\orders\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\authors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\authors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\shared\\_createitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\shared\\_createitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\publishers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\publishers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\views\\account\\registercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\views\\account\\registercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|c:\\users\\jovan\\desktop\\bibliotopia\\bibliotopia\\data\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5442098-B268-41F8-A272-45D5FD893AD3}|Bibliotopia\\Bibliotopia.csproj|solutionrelative:bibliotopia\\data\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.ShoppingCartItems [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.ShoppingCartItems.sql",
+              "ToolTip": "dbo.ShoppingCartItems [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-09T15:42:55.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Books\\Index.cshtml",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAkwJsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T11:17:43.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T10:52:32.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.Items [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.Items.sql",
+              "ToolTip": "dbo.Items [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-09T13:14:58.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Orders [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.Orders.sql",
+              "ToolTip": "dbo.Orders [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-09T13:16:12.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T09:36:12.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOrdersService.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Services\\IOrdersService.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\Services\\IOrdersService.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Services\\IOrdersService.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\Services\\IOrdersService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T12:20:02.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBooksService.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Base\\IBooksService.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\Base\\IBooksService.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Base\\IBooksService.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\Base\\IBooksService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T15:18:13.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BooksService.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Base\\BooksService.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\Base\\BooksService.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Base\\BooksService.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\Base\\BooksService.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAkwHEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T14:37:47.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ShoppingCart.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Orders\\ShoppingCart.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Orders\\ShoppingCart.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Orders\\ShoppingCart.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Orders\\ShoppingCart.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T10:59:27.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:27:55.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Publishers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Publishers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Publishers\\Index.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Publishers\\Index.cshtml",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAAIUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:07:23.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Bibliotopia\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAYwHoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T14:06:27.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Identity.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Shared\\_Identity.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Shared\\_Identity.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Shared\\_Identity.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Shared\\_Identity.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T11:42:13.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Books\\Details.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Books\\Details.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAkwEoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:10:32.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Cart\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\Cart\\ShoppingCart.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Cart\\ShoppingCart.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\Cart\\ShoppingCart.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAmwFgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T14:45:18.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NewBookVM.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\ViewModels\\NewBookVM.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\ViewModels\\NewBookVM.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\ViewModels\\NewBookVM.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\ViewModels\\NewBookVM.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T14:37:22.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T14:19:00.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthorsController.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\AuthorsController.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Controllers\\AuthorsController.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\AuthorsController.cs",
+              "RelativeToolTip": "Bibliotopia\\Controllers\\AuthorsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T14:02:32.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Bibliotopia\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T12:26:24.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Bibliotopia\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAmwFwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T09:24:01.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PublishersController.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\PublishersController.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Controllers\\PublishersController.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Controllers\\PublishersController.cs",
+              "RelativeToolTip": "Bibliotopia\\Controllers\\PublishersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T14:07:50.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\Users.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Account\\Users.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\Users.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Account\\Users.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T13:53:31.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T11:10:56.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OrdersService.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Services\\OrdersService.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\Services\\OrdersService.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\Services\\OrdersService.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\Services\\OrdersService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBAAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T12:20:27.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "additional-methods.js",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "RelativeDocumentMoniker": "Bibliotopia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "RelativeToolTip": "Bibliotopia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-09T13:20:11.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20240709114227_UpdateOrder.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709114227_UpdateOrder.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Migrations\\20240709114227_UpdateOrder.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709114227_UpdateOrder.cs",
+              "RelativeToolTip": "Bibliotopia\\Migrations\\20240709114227_UpdateOrder.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:42:28.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Author_Books.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\Author_Books.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\Author_Books.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\Author_Books.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\Author_Books.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:41:56.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BookPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\BookPublisher.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\BookPublisher.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\BookPublisher.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\BookPublisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:41:48.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:41:42.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240709113709_UpdateOrderEntit.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709113709_UpdateOrderEntit.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Migrations\\20240709113709_UpdateOrderEntit.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709113709_UpdateOrderEntit.cs",
+              "RelativeToolTip": "Bibliotopia\\Migrations\\20240709113709_UpdateOrderEntit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:37:09.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\Book.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\Book.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAIwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:35:31.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\Order.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T12:32:00.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:10:53.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ShoppingCartItem.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\ShoppingCartItem.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Models\\ShoppingCartItem.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Models\\ShoppingCartItem.cs",
+              "RelativeToolTip": "Bibliotopia\\Models\\ShoppingCartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:11:07.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240709112935_UpdateOrderEntity.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709112935_UpdateOrderEntity.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Migrations\\20240709112935_UpdateOrderEntity.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709112935_UpdateOrderEntity.cs",
+              "RelativeToolTip": "Bibliotopia\\Migrations\\20240709112935_UpdateOrderEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:29:36.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AppDbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\AppDbInitializer.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\AppDbInitializer.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\AppDbInitializer.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\AppDbInitializer.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAQwLMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T09:39:31.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_IN8NH2OB_SQLEXPRESS/ecommerce_sql_db/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-09T11:30:11.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20240709112529_OrderItems.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709112529_OrderItems.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Migrations\\20240709112529_OrderItems.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Migrations\\20240709112529_OrderItems.cs",
+              "RelativeToolTip": "Bibliotopia\\Migrations\\20240709112529_OrderItems.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:25:31.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "OrderCompleted.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Orders\\OrderCompleted.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Orders\\OrderCompleted.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Orders\\OrderCompleted.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Orders\\OrderCompleted.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T10:59:26.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_CreateItem.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Shared\\_CreateItem.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Shared\\_CreateItem.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Shared\\_CreateItem.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Shared\\_CreateItem.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:14:35.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Authors\\Details.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Authors\\Details.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Authors\\Details.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Authors\\Details.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:10:41.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Publishers\\Details.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Publishers\\Details.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Publishers\\Details.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Publishers\\Details.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:09:20.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Authors\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Authors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Authors\\Index.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Authors\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAB0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:06:09.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T09:33:24.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "RegisterCompleted.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\RegisterCompleted.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Account\\RegisterCompleted.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\RegisterCompleted.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Account\\RegisterCompleted.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T11:03:12.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Bibliotopia\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Bibliotopia\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T11:01:35.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\ViewModels\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\ViewModels\\RegisterVM.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\ViewModels\\RegisterVM.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\ViewModels\\RegisterVM.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwA8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T10:59:22.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "Bibliotopia\\Data\\ViewModels\\LoginVM.cs",
+              "ToolTip": "C:\\Users\\jovan\\Desktop\\Bibliotopia\\Bibliotopia\\Data\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "Bibliotopia\\Data\\ViewModels\\LoginVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T09:25:40.692Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+﻿@model NewBookVM
+@using Bibliotopia.Data.Enums;
+
+@{
+    ViewData["Title"] = "Update book";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h4>Измени</h4>
+        </p>
+
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Title" class="control-label"></label>
+                                <input asp-for="Title" class="form-control" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="StartDate" class="control-label"></label>
+                                <input asp-for="StartDate" type="date" class="form-control" />
+                                <span asp-validation-for="StartDate" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="EndDate" class="control-label"></label>
+                                <input asp-for="EndDate" type="date" class="form-control" />
+                                <span asp-validation-for="EndDate" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Price" class="control-label"></label>
+                                <input asp-for="Price" type="number" class="form-control" />
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="BookImageUrl" class="control-label"></label>
+                                <input asp-for="BookImageUrl" class="form-control" />
+                                <span asp-validation-for="BookImageUrl" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="PublisherId" class="control-label"></label>
+                                <select asp-for="PublisherId" class="form-control" asp-items="ViewBag.Publishers"></select>
+                                <span asp-validation-for="PublisherId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="BookCategory" class="control-label"></label>
+                                <select asp-for="BookCategory" class="form-control" asp-items="Html.GetEnumSelectList<BookCategory>()"></select>
+                                <span asp-validation-for="BookCategory" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="AuthorsIds" class="control-label"></label>
+                                <select asp-for="AuthorsIds" class="form-control" asp-items="ViewBag.Authors" multiple></select>
+                                <span asp-validation-for="AuthorsIds" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="Description" class="control-label"></label>
+                                <textarea asp-for="Description" class="form-control"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 offset-4 text-center">
+                        <img width="100%" id="BookImageUrlPreview" />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Измени" class="btn btn-outline-success float-right" />
+                        <a class="btn btn-outline-secondary" asp-action="Index">Откажи</a>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById("BookImageUrlPreview");
+            output.src = $("#BookImageUrl").val();
+        });
+
+        $("#BookImageUrl").on("change", function () {
+            var output = document.getElementById("BookImageUrlPreview");
+            output.src = $(this).val();
+        })
+    </script>
+}

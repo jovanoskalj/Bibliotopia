@@ -1,0 +1,90 @@
+﻿@model Bibliotopia.Models.Book
+@{
+    ViewData["Title"] = "Детали";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="card mb-12">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-header text-white bg-info">
+                        <h5 class="card-title">@Model.Title</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="@Model.BookImageUrl" width="100%" alt="@Model.Title">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">@Model.Description</p>
+                        <p class="card-text">
+                            <b>Издавачка куќа: </b>
+                            <a asp-controller="Publishers" asp-action="Details" asp-route-id="@Model.PublisherId">
+                                @Model.BookPublisher.Name
+                            </a>
+                        </p>
+                        <p class="card-text"><b>Категорија: </b>@Model.BookCategory</p>
+                        <p class="card-text"><b>На продажба од: </b>@Model.StartDate.ToString("dd MMM yyyy")</p>
+                        <p class="card-text"><b>На продажба до: </b>@Model.EndDate.ToString("dd MMM yyyy")</p>
+                        <p class="card-text">
+                            <b>Статус: </b>
+                            @if (DateTime.Now >= Model.StartDate && DateTime.Now <= Model.EndDate)
+                            {
+                                <span class="badge bg-success text-white">Во продажба</span>
+                            }
+                            else if (DateTime.Now > Model.EndDate)
+                            {
+                                <span class="badge bg-danger text-white">Завршено</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-primary text-white">Наскоро</span>
+                            }
+                        </p>
+                        <p class="card-text">
+                            <b>Автори: </b>
+                            <div class="d-flex flex-wrap">
+                                @foreach (var authorBook in Model.AuthorsBooks)
+                                {
+                                    <div class="text-center m-2">
+                                        <img class="author-image rounded-circle border-info" src="@authorBook.Author.PictureURL" alt="@authorBook.Author.FullName" />
+                                        <br />
+                                        <a asp-controller="Authors" asp-action="Details" asp-route-id="@authorBook.AuthorId">@authorBook.Author.FullName</a>
+                                    </div>
+                                }
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card-footer">
+                        <p class="card-text">
+                            <a class="btn btn-outline-primary float-right" asp-action="Index">Назад кон сите книги</a>
+                            @{
+                                var isDisabled = DateTime.Now < Model.StartDate || DateTime.Now > Model.EndDate;
+                            }
+                                @if(!User.IsInRole("Admin")){
+                            <a class="btn btn-success text-white @(isDisabled ? "disabled" : "")"
+                               asp-controller="Orders"
+                               asp-action="AddItemToShoppingCart"
+                               asp-route-id="@Model.Id">
+                                <i class="bi bi-cart-plus"></i> Додади во кошничка (Цена @Model.Price.ToString("c", new System.Globalization.CultureInfo("mk-MK")))
+                               
+                            </a> 
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .author-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+</style>

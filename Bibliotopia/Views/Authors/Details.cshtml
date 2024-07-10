@@ -1,0 +1,60 @@
+﻿@model Author
+
+
+
+@{
+    ViewData["Title"] = "Actor Details";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">@Model.FullName</h1>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <img class="img-fluid rounded-circle" id="ProfilePicturePreview" src="@Model.PictureURL" alt="Profile Picture" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Линк до слика:</label>
+                                <input asp-for="PictureURL" class="form-control" readonly />
+                                <span asp-validation-for="PictureURL" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Име и презиме:</label>
+                                <input asp-for="FullName" class="form-control" readonly />
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Биографија:</label>
+                                <textarea asp-for="Bio" class="form-control" readonly rows="5"></textarea>
+                                <span asp-validation-for="Bio" class="text-danger"></span>
+                            </div>
+                            <div class="text-right" style="margin-top:20px">
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-success">Уреди</a>
+                                <a asp-action="Index" class="btn btn-outline-secondary">Назад кон автори</a>
+                                
+                                }
+                                <a asp-controller="Books"  asp-action="Index" class="btn btn-outline-secondary">Назад кон почетна</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById('ProfilePicturePreview');
+            output.src = $("#PictureURL").val();
+        })
+    </script>
+}

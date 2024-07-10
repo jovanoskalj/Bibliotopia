@@ -1,0 +1,59 @@
+﻿@inject UserManager<ApplicationUser> UserManager;
+@using Microsoft.AspNetCore.Identity
+﻿
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <a class="btn btn-outline-success my-2 my-sm-0" asp-controller="Account" asp-action="Login">
+        <i class="bi bi-box-arrow-in-right"></i> Најава
+    </a>
+    <span style="padding: 5px;"></span>
+
+    <a class="btn btn-outline-primary my-2 my-sm-0" asp-controller="Account" asp-action="Register">
+        <i class="bi bi-person-plus"></i> Регистрација
+    </a>
+}
+else
+{
+
+    @*User profile section*@
+    <div class="dropdown">
+        <button class="btn btn-outline-success dropdown-toggle" type="button" id="profile-btn" data-bs-toggle="dropdown"
+                aria-expanded="false">
+            <i class="bi bi-person-badge"></i>  Здраво @UserManager.GetUserName(User)
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="profile-btn">
+            <li>
+                <a class="dropdown-item" asp-controller="Orders" asp-action="Index">
+                    <i class="bi bi-list"></i> Нарачки
+                </a>
+            </li>
+            @if (User.IsInRole("Admin"))
+            {
+                <li>
+                <a class="dropdown-item" asp-controller="Account" asp-action="Users">
+                    <i class="bi bi-people"></i> Корисници
+                </a>
+            </li>  
+            }
+          
+        </ul>
+    </div>
+    <span style="padding: 5px;"></span>
+    <form asp-controller="Account" asp-action="Logout">
+        <button class="btn btn-outline-danger my-2 my-sm-0">
+            <i class="bi bi-box-arrow-in-right"></i> Одјава
+        </button>
+    </form>
+   
+}
+<style>
+    .btn {
+        border-radius: 25px; /* Rounded buttons */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        display: inline-flex; /* Display buttons in a row */
+        align-items: center; /* Center content vertically */
+        padding: 8px 12px; /* Padding around button text */
+        margin-right:10px;
+    }
+</style>
